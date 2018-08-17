@@ -1,0 +1,28 @@
+!!! Pillar Syntax
+	
+In Pillar, you have titles speified using ""!"". The number of ""!"" corresponds to the title level.
+
+!!!! How to add a figure.
+
+First we are going to organize our folders to have a more good and flexible architecture.
+Create a folder named ==figures== under your project directory. This folder is going to contain all the figures of the project.
+
++Archetype installation>file://figures/archetype_install.png+
+
+The principal elements of this syntax ""+...+"", "">"" and ""file://"".
+""+"" elements are delimiters. The word before "">"" act as a title. After ""file://"" element you specify the path to the image.
+
+	
+!!!! Links
+	
+That *Pillar>https://github.com/pillar-markup/pillar* is an external link. ""*"" elements are delimiters and ""Pillar"" stands for link. The part after "">"" is the link location, the cible.
+For internal links, this is the same syntax, link locations only have to finish by .pier or .pillar 
+
+
+!!!! Formatting
+
+To put a text in bold, just write ""text"". For italic, write ''italic''.
+You want underline a word, that is __underlined__.
+ ""-"" builds lists.
+
+Here are some elements of syntax, for complete syntax, have a look at *Pillar syntax>https://squarebracketassociates.github.io/Booklet-PublishingAPillarBooklet/PillarSyntax.html*

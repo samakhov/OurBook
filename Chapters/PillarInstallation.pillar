@@ -1,0 +1,34 @@
+!!! Pillar Installation
+
+A complete Pillar installation process.
+
+[[[language=bash
+#for SSH cloning
+$ git clone git@github.com:pillar-markup/pillar.git -b dev-7
+#for HTTPS cloning
+$ git clone https://github.com/pillar-markup/pillar.git -b dev-7
+]]]
+
+The branch ==dev-7== is the branch with latest available changes. The above command creates a
+directory named ==pillar== in your file system.
+
+Now we should build pillar in command line. We get in the repository
+and execute the script.
+
+[[[language=bash
+$ cd pillar
+$ ./scripts/build.sh
+# This will create a buil directory under pillar directory. This directory contains the executable.
+]]]
+
+Let's move installation directory to ==.pillar== and add path our environment variables.
+
+[[[
+$ cd ..
+$ mv pillar ~/.pillar
+# update path in your .bashrc or .zshrc
+$ export PILLAR_HOME="$HOME/.pillar/build"
+$ export PATH="$PATH:$PILLAR_HOME"
+]]]
+
+We currently have all tools for generating Html files from pillar.
